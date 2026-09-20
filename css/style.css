@@ -1,0 +1,80 @@
+/* Sty/* Style général de la page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+
+/* Style des titres */
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Classe utilisée pour plusieurs sections */
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Deuxième classe réutilisable */
+.center-text {
+    text-align: center;
+}
+
+/* ID unique pour le header */
+#main-header {
+    background-color: darkgreen;
+    color: white;
+    padding: 25px;
+}
+
+/* ID unique pour le footer */
+#main-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mise en page Flexbox */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Éléments placés dans le Flexbox */
+.flex-item {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px;
+    font-size: 18px;
+}

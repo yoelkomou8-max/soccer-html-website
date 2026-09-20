@@ -4,49 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Soccer Positions</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
 
-    <!-- Header for the second page -->
-    <header>
+    <!-- Main header -->
+    <header id="main-header" class="center-text">
         <h1>Soccer Positions</h1>
         <h2>Understanding Each Player's Role</h2>
         <p>Learn about the different positions on a soccer team.</p>
     </header>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Soccer Positions</a>
+    </nav>
+
     <!-- Main content -->
     <main>
 
-        <!-- Section about soccer positions -->
-        <section>
-            <h2>Main Positions</h2>
+        <!-- Flexbox container -->
+        <div class="flex-container">
 
-            <p>
-                Every soccer player has a position that helps the team attack,
-                defend, or control the game.
-            </p>
+            <!-- First section -->
+            <section class="flex-item content-box">
+                <h2>Main Positions</h2>
 
-            <p>
-                Each position has different responsibilities, but all players
-                must work together to help their team succeed.
-            </p>
-        </section>
+                <p>
+                    Every soccer player has a position that helps the team attack,
+                    defend, or control the game.
+                </p>
 
-        <!-- Ordered list of positions -->
-        <section>
-            <h2>Four Main Soccer Positions</h2>
+                <p>
+                    Each position has different responsibilities, but all players
+                    must work together to help their team succeed.
+                </p>
+            </section>
 
-            <ol>
-                <li>Goalkeeper</li>
-                <li>Defender</li>
-                <li>Midfielder</li>
-                <li>Forward</li>
-            </ol>
-        </section>
+            <!-- Second section -->
+            <section class="flex-item content-box">
+                <h2>Four Main Soccer Positions</h2>
 
-        <!-- Section about teamwork -->
-        <section>
+                <ol>
+                    <li>Goalkeeper</li>
+                    <li>Defender</li>
+                    <li>Midfielder</li>
+                    <li>Forward</li>
+                </ol>
+            </section>
+
+        </div>
+
+        <!-- Teamwork section -->
+        <section id="teamwork-section" class="content-box center-text">
             <h2>Why Teamwork Matters</h2>
 
             <p>
@@ -57,11 +69,10 @@
 
     </main>
 
-    <!-- Link back to the first page -->
-    <footer>
+    <!-- Footer -->
+    <footer id="main-footer">
         <p><a href="index.html">Back to Home</a></p>
     </footer>
 
 </body>
 </html>
-
