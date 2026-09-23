@@ -1,28 +1,21 @@
-/* Style general de la page */
+/* General page style */
 
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     color: #222;
 }
 
 
-/* Style des titres */
+/* Custom heading styles */
 
 h1 {
-    text-align: center;
     font-size: 36px;
 }
 
 h2 {
-    text-align: center;
     font-size: 26px;
 }
-
-
-/* Style des paragraphes */
 
 p {
     font-size: 18px;
@@ -30,90 +23,63 @@ p {
 }
 
 
-/* Classe utilisee pour plusieurs sections */
+/* Custom content boxes */
 
 .content-box {
     background-color: white;
-    padding: 20px;
-    margin: 20px;
     border-radius: 10px;
+    border: 1px solid #dddddd;
 }
 
 
-/* Deuxieme classe reutilisable */
-
-.center-text {
-    text-align: center;
-}
-
-
-/* ID unique pour le header */
+/* Custom header */
 
 #main-header {
     background-color: darkgreen;
     color: white;
-    padding: 25px;
 }
 
 
-/* ID unique pour le footer */
+/* Custom footer */
 
 #main-footer {
     background-color: #222;
     color: white;
-    text-align: center;
-    padding: 15px;
 }
 
 #main-footer a {
     color: white;
-    text-decoration: underline;
 }
 
 
-/* Mise en page Flexbox */
+/* Custom navigation button style */
 
-.flex-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+nav .btn-primary {
+    background-color: #006400;
+    border-color: #006400;
+}
+
+nav .btn-primary:hover {
+    background-color: #004d00;
+    border-color: #004d00;
 }
 
 
-/* Elements places dans le Flexbox */
+/* Custom image style */
 
-.flex-item {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
+#soccer-image img {
     border-radius: 10px;
 }
 
 
-/* Navigation */
+/* Custom teamwork section */
 
-nav {
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    margin: 10px;
-    font-size: 18px;
-    color: #004d00;
-    font-weight: bold;
+#teamwork-section {
+    border-left: 5px solid darkgreen;
 }
 
 
-/* Images responsives */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Responsive design pour les petits ecrans */
+/* Responsive adjustments */
 
 @media (max-width: 768px) {
 
@@ -127,23 +93,5 @@ img {
 
     p {
         font-size: 16px;
-    }
-
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .content-box {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #main-header {
-        padding: 15px;
     }
 }

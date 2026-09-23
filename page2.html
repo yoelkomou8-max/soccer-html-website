@@ -5,54 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soccer Positions</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <header id="main-header" class="center-text">
+    <header id="main-header" class="text-center p-4">
         <h1>Soccer Positions</h1>
         <h2>Understanding Each Player's Role</h2>
         <p>Learn about the different positions on a soccer team.</p>
     </header>
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="page2.html">Soccer Positions</a>
+    <nav class="text-center p-3" aria-label="Main navigation">
+        <a href="index.html" class="btn btn-primary m-1">Home</a>
+        <a href="page2.html" class="btn btn-primary m-1">Soccer Positions</a>
     </nav>
 
-    <main>
+    <main class="container my-4">
 
-        <div class="flex-container">
+        <div class="row g-4">
 
-            <section class="flex-item content-box">
-                <h2>Main Positions</h2>
+            <section class="col-md-6">
+                <div class="content-box h-100 p-3">
+                    <h2>Main Positions</h2>
 
-                <p>
-                    Every soccer player has a position that helps the team attack,
-                    defend, or control the game.
-                </p>
+                    <p>
+                        Every soccer player has a position that helps the team attack,
+                        defend, or control the game.
+                    </p>
 
-                <p>
-                    Each position has different responsibilities, but all players
-                    must work together to help their team succeed.
-                </p>
+                    <p>
+                        Each position has different responsibilities, but all players
+                        must work together to help their team succeed.
+                    </p>
+                </div>
             </section>
 
-            <section class="flex-item content-box">
-                <h2>Four Main Soccer Positions</h2>
+            <section class="col-md-6">
+                <div class="content-box h-100 p-3">
+                    <h2>Four Main Soccer Positions</h2>
 
-                <ol>
-                    <li>Goalkeeper</li>
-                    <li>Defender</li>
-                    <li>Midfielder</li>
-                    <li>Forward</li>
-                </ol>
+                    <ol>
+                        <li>Goalkeeper</li>
+                        <li>Defender</li>
+                        <li>Midfielder</li>
+                        <li>Forward</li>
+                    </ol>
+                </div>
             </section>
 
         </div>
 
-        <section id="teamwork-section" class="content-box center-text">
+        <section id="teamwork-section" class="content-box text-center p-4 mt-4">
             <h2>Why Teamwork Matters</h2>
 
             <p>
@@ -63,9 +72,11 @@
 
     </main>
 
-    <footer id="main-footer">
+    <footer id="main-footer" class="text-center p-3">
         <p>
-            <a href="index.html">Return to the Soccer Basics homepage</a>
+            <a href="index.html" class="btn btn-outline-light">
+                Return to the Soccer Basics homepage
+            </a>
         </p>
     </footer>
 
