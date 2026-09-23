@@ -1,4 +1,5 @@
-/* Sty/* Style général de la page */
+/* Style general de la page */
+
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
@@ -9,6 +10,7 @@ body {
 
 
 /* Style des titres */
+
 h1 {
     text-align: center;
     font-size: 36px;
@@ -19,13 +21,17 @@ h2 {
     font-size: 26px;
 }
 
+
 /* Style des paragraphes */
+
 p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* Classe utilisée pour plusieurs sections */
+
+/* Classe utilisee pour plusieurs sections */
+
 .content-box {
     background-color: white;
     padding: 20px;
@@ -33,19 +39,25 @@ p {
     border-radius: 10px;
 }
 
-/* Deuxième classe réutilisable */
+
+/* Deuxieme classe reutilisable */
+
 .center-text {
     text-align: center;
 }
 
+
 /* ID unique pour le header */
+
 #main-header {
     background-color: darkgreen;
     color: white;
     padding: 25px;
 }
 
+
 /* ID unique pour le footer */
+
 #main-footer {
     background-color: #222;
     color: white;
@@ -53,14 +65,23 @@ p {
     padding: 15px;
 }
 
+#main-footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+
 /* Mise en page Flexbox */
+
 .flex-container {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
-/* Éléments placés dans le Flexbox */
+
+/* Elements places dans le Flexbox */
+
 .flex-item {
     flex: 1;
     background-color: white;
@@ -68,7 +89,9 @@ p {
     border-radius: 10px;
 }
 
+
 /* Navigation */
+
 nav {
     text-align: center;
     padding: 15px;
@@ -77,4 +100,50 @@ nav {
 nav a {
     margin: 10px;
     font-size: 18px;
+    color: #004d00;
+    font-weight: bold;
+}
+
+
+/* Images responsives */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsive design pour les petits ecrans */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .content-box {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #main-header {
+        padding: 15px;
+    }
 }
